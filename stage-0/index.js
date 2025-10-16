@@ -9,21 +9,21 @@ updateTimestamp();
 
 setInterval(updateTimestamp, 1000);
 
-const avatarUpload = document.getElementById('avatarUpload');
-const avatarImage = document.getElementById('avatarImage');
+// const avatarUpload = document.getElementById('avatarUpload');
+// const avatarImage = document.getElementById('avatarImage');
 
-if (avatarUpload && avatarImage) {
-  avatarUpload.addEventListener('change', function (e) {
-    const file = e.target.files[0];
-    if (file && file.type.startsWith('image/')) {
-      const reader = new FileReader();
-      reader.onload = function (event) {
-        avatarImage.src = event.target.result;
-      };
-      reader.readAsDataURL(file);
-    }
-  });
-}
+// if (avatarUpload && avatarImage) {
+//   avatarUpload.addEventListener('change', function (e) {
+//     const file = e.target.files[0];
+//     if (file && file.type.startsWith('image/')) {
+//       const reader = new FileReader();
+//       reader.onload = function (event) {
+//         avatarImage.src = event.target.result;
+//       };
+//       reader.readAsDataURL(file);
+//     }
+//   });
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
   const focusableElements = document.querySelectorAll(
