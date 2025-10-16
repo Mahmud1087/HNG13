@@ -1,6 +1,6 @@
 # Profile Card Component
 
-A fully accessible, responsive profile card component built with semantic HTML, modern CSS, and vanilla JavaScript. Designed for automated testing with comprehensive `data-testid` attributes.
+A fully accessible, responsive profile card built with semantic HTML, modern CSS, and vanilla JavaScript. Designed for automated testing with comprehensive `data-testid` attributes.
 
 ## 🚀 Quick Start
 
@@ -9,8 +9,8 @@ A fully accessible, responsive profile card component built with semantic HTML, 
 1. **Clone or download the files**
 
    ```bash
-   git clone <your-repo-url>
-   cd profile-card-component
+   git clone https://github.com/Mahmud1087/HNG13.git
+   cd HNG13/stage-0
    ```
 
 2. **Open in browser**
@@ -32,7 +32,7 @@ A fully accessible, responsive profile card component built with semantic HTML, 
    # Install "Live Server" extension, right-click index.html, select "Open with Live Server"
    ```
 
-3. **That's it!** No build process, no dependencies, no installation required.
+3. **That's it!**
 
 ---
 
@@ -40,11 +40,11 @@ A fully accessible, responsive profile card component built with semantic HTML, 
 
 ```
 profile-card-component/
-├── index.html           # Main HTML file (includes CSS and JS)
-├── README.md           # This file
-├── TESTING.md          # Testing documentation and test IDs
-└── tests/
-    └── example-tests.js # Sample test implementations
+├── index.html
+├── style.css
+├── index.js
+├── README.md
+└── /images
 ```
 
 ---
@@ -127,85 +127,13 @@ All interactive and key elements include `data-testid` attributes for automated 
 - `test-dislike-cold` - Individual dislike item
 - `test-dislike-meetings` - Individual dislike item
 
-### Running Tests
-
-See `TESTING.md` for detailed test examples and implementations.
-
-**Example test frameworks:**
-
-- Jest + Testing Library
-- Cypress
-- Playwright
-- Selenium
-
----
-
-## 🎨 Customization
-
-### Changing Content
-
-Edit the HTML directly in `index.html`:
-
-```html
-<!-- Change name -->
-<h2 class="profile-title" data-testid="test-user-name">Your Name</h2>
-
-<!-- Change bio -->
-<p class="profile-bio" data-testid="test-user-bio">Your bio here...</p>
-
-<!-- Change avatar -->
-<img src="your-image-url.jpg" alt="Your name" ... />
-```
-
-### Styling
-
-The component uses CSS custom properties for easy theming. Add these to the `:root` selector:
-
-```css
-:root {
-  --primary-color: #667eea;
-  --secondary-color: #764ba2;
-  --text-dark: #1a202c;
-  --text-light: #4a5568;
-  --background: white;
-  --border-radius: 16px;
-}
-```
-
-### Color Schemes
-
-The component includes a purple gradient theme by default. To change:
-
-```css
-body {
-  background: linear-gradient(135deg, #your-color-1 0%, #your-color-2 100%);
-}
-```
-
----
-
 ## 🔧 Technical Details
-
-### Browser Support
-
-- ✅ Chrome/Edge (latest 2 versions)
-- ✅ Firefox (latest 2 versions)
-- ✅ Safari (latest 2 versions)
-- ✅ Mobile browsers (iOS Safari, Chrome Android)
 
 ### Technologies Used
 
 - **HTML5** - Semantic markup
 - **CSS3** - Flexbox, Grid, Custom Properties
 - **Vanilla JavaScript** - ES6+
-- **No frameworks** - Zero dependencies
-
-### Performance
-
-- ⚡ First Contentful Paint: < 0.5s
-- ⚡ Time to Interactive: < 1s
-- 📦 Total size: < 20KB (uncompressed)
-- 🚀 No external requests (except avatar image)
 
 ---
 
@@ -231,38 +159,9 @@ None currently. If you find any issues, please report them!
 
 ---
 
-## 📄 License
-
-MIT License - Feel free to use this component in your projects!
-
----
-
 ## 🤝 Contributing
 
 This is a standalone component example. Feel free to fork and modify as needed!
-
----
-
-## 📞 Support
-
-For questions or issues:
-
-1. Check the `TESTING.md` file for test examples
-2. Review the inline code comments in `index.html`
-3. Open an issue in the repository
-
----
-
-## 🎯 Use Cases
-
-Perfect for:
-
-- Personal portfolio sites
-- Team member profiles
-- User dashboards
-- Social media platforms
-- Contact cards
-- About pages
 
 ---
 
@@ -273,20 +172,3 @@ Perfect for:
 1. Press `Tab` to navigate through all interactive elements
 2. Press `Enter` to activate links/buttons
 3. Press `Space` to select file input
-
-### Screen Reader Testing
-
-- Tested with NVDA (Windows)
-- Tested with VoiceOver (macOS/iOS)
-- All content properly announced
-
-### Color Contrast
-
-- Text color contrast ratio: 7:1+ (AAA)
-- Interactive element contrast: 4.5:1+ (AA)
-- Focus indicator contrast: 3:1+ (AA)
-
----
-
-**Last Updated:** October 2025  
-**Version:** 1.0.0
