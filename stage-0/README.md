@@ -1,6 +1,6 @@
-# Profile Card Component
+# Profile
 
-A fully accessible, responsive profile card built with semantic HTML, modern CSS, and vanilla JavaScript. Designed for automated testing with comprehensive `data-testid` attributes.
+A fully accessible, responsive profile built with semantic HTML, modern CSS, and vanilla JavaScript. Designed for automated testing with comprehensive `data-testid` attributes.
 
 ## 🚀 Quick Start
 
@@ -39,11 +39,19 @@ A fully accessible, responsive profile card built with semantic HTML, modern CSS
 ## 📁 Project Structure
 
 ```
-profile-card-component/
+stage-0/
 ├── index.html
 ├── style.css
 ├── index.js
 ├── README.md
+├── /contact
+   ├── index.html
+   ├── index.js
+   ├── style.css
+├── /about
+   ├── index.html
+   ├── index.js
+   ├── style.css
 └── /images
 ```
 
@@ -89,6 +97,8 @@ profile-card-component/
 
 ### Available Test IDs
 
+### Home Page
+
 All interactive and key elements include `data-testid` attributes for automated testing:
 
 #### Main Container
@@ -126,6 +136,32 @@ All interactive and key elements include `data-testid` attributes for automated 
 - `test-dislike-bugs` - Individual dislike item
 - `test-dislike-cold` - Individual dislike item
 - `test-dislike-meetings` - Individual dislike item
+
+### About Me Page
+
+- `test-about-bio` - Bio
+- `test-about-goals` - Goals in this program
+- `test-about-confidence` - Areas of low confidence
+- `test-about-future-note` - Note to future self
+- `test-about-extra` - Extra thoughts
+
+### Contact Me Page
+
+#### Form Inputs
+
+- `test-contact-name` - Full name
+- `test-contact-email` - Email
+- `test-contact-subject` - Subject
+- `test-contact-message` - Message
+- `test-contact-submit` - Submit Button
+- `test-contact-success` - Success Message
+
+#### Form input error
+
+- `test-contact-error-name` - Full name error
+- `test-contact-error-email` - Email error
+- `test-contact-error-subject` - Subject error
+- `test-contact-error-message` - Message error
 
 ## 🔧 Technical Details
 
