@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <main>
+      <nav class="nav-bar" data-testid="test-navbar">
+        <p class="logo" data-testid="test-logo">
+          <a href="/stage-0/index.html">MA</a>
+        </p>
+        <ul>
+          <li><a href="/stage-0/about/index.html">About Me</a></li>
+          <li><a href="/stage-0/contact/index.html">Contact Me</a></li>
+        </ul>
+      </nav>
+      <header class="page-header">
+        <h1 class="page-title">Contact Me</h1>
+        <p class="page-subtitle">
+          I'd love to hear from you. Send me a message
+        </p>
+      </header>
+      <div class="content-section">
+        <div
+          class="success-message"
+          data-testid="test-contact-success"
+          id="successMessage"
+          role="alert"
+          aria-live="polite"
+        >
+          <div class="success-icon">✓</div>
+          <strong>Message sent successfully!</strong>
+          <p>Thank you for reaching out. I'll get back to you soon.</p>
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div>
+            <label for="fullName"
+              >Full Name <span style="color: red">*</span></label
+            >
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              data-testid="test-contact-name"
+            />
+            <div
+              id="nameError"
+              class="error-message"
+              aria-live="polite"
+              data-testid="test-contact-error-name"
+            ></div>
+          </div>
+
+          <div>
+            <label for="email">Email <span style="color: red">*</span></label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              data-testid="test-contact-email"
+            />
+            <div
+              id="emailError"
+              class="error-message"
+              aria-live="polite"
+              data-testid="test-contact-error-email"
+            ></div>
+          </div>
+
+          <div>
+            <label for="subject"
+              >Subject <span style="color: red">*</span></label
+            >
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              data-testid="test-contact-subject"
+            />
+            <div
+              id="subjectError"
+              class="error-message"
+              aria-live="polite"
+              data-testid="test-contact-error-subject"
+            ></div>
+          </div>
+
+          <div>
+            <label for="message"
+              >Message <span style="color: red">*</span></label
+            >
+            <textarea
+              id="message"
+              name="message"
+              data-testid="test-contact-message"
+            ></textarea>
+            <div
+              id="messageError"
+              class="error-message"
+              aria-live="polite"
+              data-testid="test-contact-error-message"
+            ></div>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-btn"
+            id="submit-btn"
+            data-testid="test-contact-submit"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

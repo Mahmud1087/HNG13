@@ -12,20 +12,30 @@
     <title>Profile Card</title>
   </head>
   <body>
-    <article class="profile-card" data-testid="test-profile-card">
-      <div class="card-content">
-        <header class="profile-header">
-          <div class="avatar-section">
-            <figure class="avatar-figure">
-              <img
-                src="./images/profile_img.jpg"
-                alt="Profile picture of Mahmud Abdulazeez"
-                class="avatar-img"
-                data-testid="test-user-avatar"
-                id="avatarImage"
-              />
-            </figure>
-            <!-- <div class="upload-section">
+    <main>
+      <nav class="nav-bar" data-testid="test-navbar">
+        <p class="logo" data-testid="test-logo">
+          <a href="/stage-0/index.html">MA</a>
+        </p>
+        <ul>
+          <li><a href="/stage-0/about/index.html">About Me</a></li>
+          <li><a href="/stage-0/contact/index.html">Contact Me</a></li>
+        </ul>
+      </nav>
+      <article class="profile-card" data-testid="test-profile-card">
+        <div class="card-content">
+          <header class="profile-header">
+            <div class="avatar-section">
+              <figure class="avatar-figure">
+                <img
+                  src="./images/profile_img.jpg"
+                  alt="Profile picture of Mahmud Abdulazeez"
+                  class="avatar-img"
+                  data-testid="test-user-avatar"
+                  id="avatarImage"
+                />
+              </figure>
+              <!-- <div class="upload-section">
               <label for="avatarUpload" class="upload-label">
                 Change Avatar
               </label>
@@ -38,113 +48,114 @@
                 aria-label="Upload new profile picture"
               />
             </div> -->
-            <nav class="social-nav" aria-label="Social media links">
-              <ul class="social-links" data-testid="test-user-social-links">
-                <li>
-                  <a
-                    href="https://x.com/MahmudEnesi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-link"
-                    data-testid="test-user-social-twitter"
-                  >
-                    <i class="fa-brands fa-x-twitter"></i>
-                  </a>
+              <nav class="social-nav" aria-label="Social media links">
+                <ul class="social-links" data-testid="test-user-social-links">
+                  <li>
+                    <a
+                      href="https://x.com/MahmudEnesi"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                      data-testid="test-user-social-twitter"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Mahmud1087"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                      data-testid="test-user-social-github"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/enesifrontenddev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="social-link"
+                      data-testid="test-user-social-linkedin"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="info-section">
+              <h2 class="profile-title" data-testid="test-user-name">
+                Mahmud Abdulazeez
+              </h2>
+              <p class="profile-subtitle" data-testid="test-user-title">
+                Frontend Developer
+              </p>
+              <p class="profile-bio" data-testid="test-user-bio">
+                Passionate about creating accessible, user-friendly web
+                experiences. I love combining clean code with beautiful design
+                to build products that make a difference. When I'm not coding,
+                you'll find me reading books on finance or personal development.
+              </p>
+            </div>
+          </header>
+
+          <div class="details-grid">
+            <section
+              class="detail-section hobbies-section"
+              aria-labelledby="hobbies-heading"
+            >
+              <h3 class="section-title" id="hobbies-heading">Hobbies</h3>
+              <ul class="detail-list" data-testid="test-user-hobbies">
+                <li class="detail-item" data-testid="test-hobby-sports">
+                  Sports
                 </li>
-                <li>
-                  <a
-                    href="https://github.com/Mahmud1087"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-link"
-                    data-testid="test-user-social-github"
-                  >
-                    <i class="fa-brands fa-github"></i>
-                  </a>
+                <li class="detail-item" data-testid="test-hobby-cooking">
+                  Cooking
                 </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/enesifrontenddev/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-link"
-                    data-testid="test-user-social-linkedin"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                  </a>
+                <li class="detail-item" data-testid="test-hobby-reading">
+                  Reading books
+                </li>
+                <li class="detail-item" data-testid="test-hobby-gaming">
+                  Playing video games
                 </li>
               </ul>
-            </nav>
+            </section>
+
+            <section
+              class="detail-section dislikes-section"
+              aria-labelledby="dislikes-heading"
+            >
+              <h3 class="section-title" id="dislikes-heading">Dislikes</h3>
+              <ul class="detail-list" data-testid="test-user-dislikes">
+                <li class="detail-item" data-testid="test-dislike-traffic">
+                  Traffic jams
+                </li>
+                <li class="detail-item" data-testid="test-dislike-bugs">
+                  Poorly documented code
+                </li>
+                <li class="detail-item" data-testid="test-dislike-cold">
+                  Cold meals
+                </li>
+                <li class="detail-item" data-testid="test-dislike-meetings">
+                  Unnecessary meetings
+                </li>
+              </ul>
+            </section>
           </div>
-
-          <div class="info-section">
-            <h2 class="profile-title" data-testid="test-user-name">
-              Mahmud Abdulazeez
-            </h2>
-            <p class="profile-subtitle" data-testid="test-user-title">
-              Frontend Developer
-            </p>
-            <p class="profile-bio" data-testid="test-user-bio">
-              Passionate about creating accessible, user-friendly web
-              experiences. I love combining clean code with beautiful design to
-              build products that make a difference. When I'm not coding, you'll
-              find me reading books on finance or personal development.
-            </p>
-          </div>
-        </header>
-
-        <div class="details-grid">
-          <section
-            class="detail-section hobbies-section"
-            aria-labelledby="hobbies-heading"
+          <p
+            class="profile-time"
+            data-testid="test-user-time"
+            id="userTime"
+            aria-live="polite"
           >
-            <h3 class="section-title" id="hobbies-heading">Hobbies</h3>
-            <ul class="detail-list" data-testid="test-user-hobbies">
-              <li class="detail-item" data-testid="test-hobby-sports">
-                Sports
-              </li>
-              <li class="detail-item" data-testid="test-hobby-cooking">
-                Cooking
-              </li>
-              <li class="detail-item" data-testid="test-hobby-reading">
-                Reading books
-              </li>
-              <li class="detail-item" data-testid="test-hobby-gaming">
-                Playing video games
-              </li>
-            </ul>
-          </section>
-
-          <section
-            class="detail-section dislikes-section"
-            aria-labelledby="dislikes-heading"
-          >
-            <h3 class="section-title" id="dislikes-heading">Dislikes</h3>
-            <ul class="detail-list" data-testid="test-user-dislikes">
-              <li class="detail-item" data-testid="test-dislike-traffic">
-                Traffic jams
-              </li>
-              <li class="detail-item" data-testid="test-dislike-bugs">
-                Poorly documented code
-              </li>
-              <li class="detail-item" data-testid="test-dislike-cold">
-                Cold meals
-              </li>
-              <li class="detail-item" data-testid="test-dislike-meetings">
-                Unnecessary meetings
-              </li>
-            </ul>
-          </section>
+            Loading timestamp...
+          </p>
         </div>
-        <p
-          class="profile-time"
-          data-testid="test-user-time"
-          id="userTime"
-          aria-live="polite"
-        >
-          Loading timestamp...
-        </p>
-      </div>
-    </article>
+      </article>
+    </main>
   </body>
 </html>
