@@ -1,4 +1,3 @@
-// Keyboard accessibility enhancement
 document.addEventListener('DOMContentLoaded', function () {
   const focusableElements = document.querySelectorAll('a, button');
 
@@ -12,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Smooth scroll to sections (if implementing in-page navigation later)
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
